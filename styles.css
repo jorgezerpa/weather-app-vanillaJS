@@ -201,6 +201,14 @@ main{
 }
 
 
+
+@media(min-width:1850px){
+    :root{
+        font-size: 1.1rem;
+    }
+}
+
+
 @media(max-width:720px){
     :root{
         font-size: 1.2rem;
