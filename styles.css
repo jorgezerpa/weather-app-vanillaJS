@@ -4,20 +4,26 @@
     box-sizing: border-box;
 }
  
+:root{
+    font-size: .8rem;
+}
 
 html, body{
     width: 100%;
     height: 100%;
+    min-height: 100%;
     position: relative;
     font-size: 1rem;
+    overflow: auto;
 }
 
 .auxiliar-background{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
     background: linear-gradient(135deg,rgba(34,15,254,.9), rgba(241,15,15,.7));
     visibility: hidden;
 }
@@ -29,15 +35,17 @@ main{
     position: relative;
     width: 100%;
     height: 100%;
+    overflow: auto;
     background: linear-gradient(135deg,rgba(34,15,254,.9), rgba(241,15,15,.7));
 }
 
 .big-window{
+    font-size: 1rem;
     position: absolute;
     margin: auto;
-    width: 80%;
-    height: 43%;
-    top: 7.8%;
+    width: 72rem;
+    height: 30rem;
+    top: 5rem;
     left: 50%;
     transform: translate(-50%, 0);
     border: .5 solid #FFF;
@@ -50,9 +58,10 @@ main{
 }
 
 .principal-info{
+    font-size: 1em;
     width: 100%;
     position: absolute;
-    top: 41.5%;
+    top: 12.4em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -63,21 +72,21 @@ main{
 }
 
 .big-window h2{
-    font-size: 13.5rem; 
+    font-size: 13.5em; 
     margin-left: 1rem; 
 }
 
 .city-date{
-    margin-top: 8rem;
-    margin-right: 1rem;
+    margin-top: 8em;
+    margin-right: 1em;
 }
 
 .city-date h3{
-    font-size: 3rem;
+    font-size: 3em;
 }
 
 .city-date h4{
-    font-size: 2rem;
+    font-size: 2em;
 }
 
 
@@ -85,21 +94,21 @@ main{
                         /* info cards  */
 .info-cards{
     position: absolute;
-    top: 58%;
+    top: 37rem;
     left: 50%;
     transform: translate(-50%, 0);
-    height: 35%;
-    width: 77.6%;
+    height: 22.3rem;
+    width: 70rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    gap: 30px;
+    gap: 1.8rem;
 }
 
 .info-card{
     position: relative;
-    width: 25%;
-    height: 100%;
+    width: 17.4rem;
+    height: 22.3rem;
     border-radius: 50px;   
 }
            
@@ -120,8 +129,8 @@ main{
     display: inline-block;
     width: 41%;
     position: absolute;
-    top: 9.6%;
-    right: 6.1%;
+    top: 2.2rem;
+    right: 1rem;
 }
 
 .info-card i img{
@@ -133,8 +142,8 @@ main{
     font-size: 5.5rem;
     color: #fff;
     position: absolute;
-    top: 6%;
-    left: 13%;
+    top: 1rem;
+    left: 2.3rem;
     text-shadow: .4rem .4rem .6rem #000;
 }
 
@@ -142,8 +151,8 @@ main{
     color: #fff;
     font-size: 2rem;
     position: absolute;
-    left: 10%;
-    top: 45%;
+    left: 1.6rem;
+    top: 10.3rem;
 }
 
 .info ul{
@@ -162,24 +171,92 @@ main{
 }
 
 
-
-@media(max-height: 60vw){
-    html{
-        font-size: .8rem;
+@media(max-width:1000px){
+    :root{
+        font-size: 1.5rem;
     }
 
-    main{
-        width: 70%;
-        background: none;
+    .big-window{
+        width: 29rem;
+        height: 16rem;
     }
 
-    .auxiliar-background{
-        visibility: visible;
+    .principal-info{
+        font-size: .50rem;
+        top: 6rem;
+    }
+
+    .info-cards{
+        flex-direction: column;
+        margin: 0 auto;
+        height: 70rem;
+        width: 22.3rem;
+        top: 24rem;
+    }
+
+    .info-card{
+        width: 100%;
+        height: 22.3rem;
     }
 }
 
-@media (max-width: 1390px) and (max-height:1040px){
-    html{
-        font-size: .8rem ;
+
+@media(max-width:720px){
+    :root{
+        font-size: 1.2rem;
+    }
+
+    .big-window{
+        width: 29rem;
+        height: 16rem;
+    }
+
+    .principal-info{
+        font-size: .50rem;
+        top: 6rem;
+    }
+
+    .info-cards{
+        flex-direction: column;
+        margin: 0 auto;
+        height: 70rem;
+        width: 22.3rem;
+        top: 24rem;
+    }
+
+    .info-card{
+        width: 100%;
+        height: 22.3rem;
+    }
+}
+
+
+
+@media(max-width:600px){
+    :root{
+        font-size: 1.0rem;
+    }
+
+    .big-window{
+        width: 29rem;
+        height: 16rem;
+    }
+
+    .principal-info{
+        font-size: .50rem;
+        top: 6rem;
+    }
+
+    .info-cards{
+        flex-direction: column;
+        margin: 0 auto;
+        height: 70rem;
+        width: 22.3rem;
+        top: 24rem;
+    }
+
+    .info-card{
+        width: 100%;
+        height: 22.3rem;
     }
 }
