@@ -57,6 +57,17 @@ main{
     background-size: cover;
 }
 
+.search{
+    font-size: 30px;
+    display: inline-block;
+    background-color: white;
+}
+
+#search-bar{
+    visibility: hidden;
+}
+
+
 .principal-info{
     font-size: 1em;
     width: 100%;
