@@ -43,7 +43,7 @@ lup.addEventListener("click", ()=>{
 search_bar.addEventListener("change",()=>{
     country_to_search=search_bar.value;
             //get geographic data of the searched place
-    fetch("http://api.openweathermap.org/geo/1.0/direct?q="+country_to_search+"&limit=1&appid=08c76ae8a032cfda2404ed64d740eab7")
+    fetch("https://api.openweathermap.org/geo/1.0/direct?q="+country_to_search+"&limit=1&appid=08c76ae8a032cfda2404ed64d740eab7")
     .then(response=>response.json())
     .then(response=>{
         city_data=response;
