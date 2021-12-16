@@ -58,9 +58,10 @@ main{
 }
 
 .search{
+    color: white;
     font-size: 30px;
     display: inline-block;
-    background-color: white;
+    margin: 1rem;
 }
 
 #search-bar{
